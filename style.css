@@ -1,0 +1,330 @@
+/* =====================================
+   NEELKANTH SALES
+   STYLE.CSS PART 1
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    padding:15px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+h1{
+    text-align:center;
+    color:#d32f2f;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.customer{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.customer input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+#search{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#d32f2f;
+    color:#fff;
+    padding:10px;
+    border:1px solid #ccc;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:8px;
+    text-align:center;
+}
+
+.category-row td{
+    background:#ffe082;
+    color:#000;
+    font-size:18px;
+    font-weight:bold;
+    text-align:left;
+}
+
+.qty-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+}
+
+.qty{
+    width:50px;
+    height:36px;
+    text-align:center;
+    font-size:16px;
+    border:1px solid #bbb;
+    border-radius:6px;
+}
+
+.plus,
+.minus{
+    width:34px;
+    height:34px;
+    border:none;
+    border-radius:8px;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.plus{
+    background:#28a745;
+}
+
+.minus{
+    background:#e53935;
+}
+
+.footer{
+    margin-top:20px;
+    text-align:right;
+}
+
+.footer h2{
+    color:#d32f2f;
+    font-size:28px;
+}
+
+.payment-box{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin-top:15px;
+}
+
+.payment-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+/* =====================================
+   STYLE.CSS PART 2
+===================================== */
+
+/* Action Buttons */
+
+.buttons{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.buttons button{
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.buttons button:hover{
+    transform:translateY(-2px);
+}
+
+.buttons button:nth-child(1){
+    background:#2196F3;
+}
+
+.buttons button:nth-child(2){
+    background:#4CAF50;
+}
+
+.buttons button:nth-child(3){
+    background:#F44336;
+}
+
+/* Preview Popup */
+
+.preview-box{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.55);
+    z-index:9999;
+}
+
+.preview-card{
+    width:95%;
+    max-width:430px;
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    max-height:90vh;
+    overflow:auto;
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
+}
+
+/* Bill */
+
+#saveBill{
+    background:#fff;
+    border:2px solid #d32f2f;
+    border-radius:10px;
+    padding:15px;
+}
+
+#saveBill table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+#saveBill th{
+    background:#d32f2f;
+    color:#fff;
+    border:1px solid #999;
+}
+
+#saveBill td{
+    border:1px solid #ccc;
+    padding:8px;
+}
+
+.preview-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.preview-buttons button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.preview-buttons button:first-child{
+    background:#4CAF50;
+}
+
+.preview-buttons button:last-child{
+    background:#F44336;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.customer{
+    grid-template-columns:1fr;
+}
+
+.payment-box{
+    grid-template-columns:1fr;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.footer{
+    text-align:center;
+}
+
+.footer h2{
+    font-size:24px;
+}
+
+table{
+    font-size:13px;
+}
+
+th,
+td{
+    padding:6px;
+}
+
+.qty{
+    width:42px;
+}
+
+.plus,
+.minus{
+    width:32px;
+    height:32px;
+    font-size:18px;
+}
+
+.preview-card{
+    width:97%;
+}
+
+}
+
+/* Print */
+
+@media print{
+
+.buttons,
+.preview-buttons,
+#search{
+    display:none !important;
+}
+
+body{
+    background:#fff;
+}
+
+.container{
+    box-shadow:none;
+    border:none;
+}
+
+}
