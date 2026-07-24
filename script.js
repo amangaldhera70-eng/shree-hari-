@@ -485,7 +485,7 @@ ${currentCategory}
     ">
 
         <img
-        src="images/payment.png"
+        src="payment.png"
         style="
         width:180px;
         height:180px;
@@ -511,37 +511,7 @@ function closeBill(){
     document.getElementById("previewBox").style.display = "none";
 
 }
-                   
-
-  
-
-
-      
-
-       
-            
-            
-             
-           
-       
-      
-
-    
-
-        
-         
-           
-
-    
-     
-  
-  
-    
-    
-    
-    
-    
-
+                       
 // SCRIPT.JS - J5 (UPDATED)
 // SAVE BILL IMAGE
 // ===================================
